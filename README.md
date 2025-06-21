@@ -20,6 +20,7 @@ This Ethical Phishing Simulation Platform has been developed as an educational i
 - **Logging:** Plain text file
 
 ## Project Structure
+```
 phishing_simulatn/
 |---app.py
 |---send_email.py
@@ -31,6 +32,7 @@ phishing_simulatn/
 |---logs.txt
 |---report_proj.pdf
 |---ngrok.exe
+```
 
 ## Pre-Requisite
 - Python (above 3.0 version)
