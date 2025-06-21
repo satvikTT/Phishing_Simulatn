@@ -61,4 +61,39 @@ https://ngrok.com/downloads/windows?tab=download
    Implemented `app.py` using the Flask framework to serve the login page and handle form submissions securely.
 3. Integrated Frontend with Backend:
    Configured Flask to render the HTML template and capture user input data when credentials are submitted through the form.
-4. 
+4. Configured Ngrok for Public Access:
+   Downloaded and placed Ngrok in the project directory to create a secure tunnel, allowing the local Flask server to be accessed from external devices over the internet.
+5. Generated a Public URL:
+   Opened the command prompt within the project folder and executed Ngrok to forward the local server port (5000), resulting in a unique, publicly accessible URL.
+   ```bash
+   ngrok http 5000
+   ```
+6. Linked the Public URL in the Email Script:
+   Copied the Ngrok-generated link and updated it within send_email.py so that the phishing simulation email directs recipients to the hosted fake login page.
+7. Dispatched the Simulation Email:
+   Executed send_email.py to send an awareness demonstration email to a specified recipient, containing the Ngrok link to the simulated phishing page.
+   ```bash
+   python send_email.py
+   ```
+8. Ran the Flask Application:
+   Started the Flask server by running app.py, ensuring that the fake login page is live and ready to receive submissions from users who access the link.
+   ```bash
+   python app.py
+   ```
+9. Captured User Input:
+    When a recipient visits the page and enters credentials, the data is securely logged in a file named logs.txt for later review and analysis.
+10. Reviewed Collected Data:
+    Examined logs.txt to analyze the submitted dummy credentials, demonstrating how phishing attacks can collect sensitive information and highlighting the importance of user awareness.
+
+## Disclaimer
+This project is strictly for educational and awareness purposes. Do not use it to collect real user credentials. Use responsibly and ethically.
+
+## Enclosures
+- **_app.py:_** Flask application that serves the fake login page and captures submitted credentials for demonstration purposes.
+- **_send_email.py:_** Python script to send a phishing simulation email containing the Ngrok public link to the fake login page.
+- **_outlook_modern.html:_** HTML template that mimics a realistic Microsoft Outlook login page used in the simulation.
+- **_modern.css:_** CSS file that styles the fake login page to closely resemble the authentic Outlook interface.
+- **_report_proj.pdf:_** The final project report outlining objectives, tools used, workflow steps, and conclusions drawn from the simulation.
+
+## Conclusion
+This project illustrates how phishing tactics can be ethically replicated within a controlled environment to enhance user awareness and resilience against online deception. By integrating a realistic login interface, a robust Flask backend, secure Ngrok tunneling, and an automated email dispatch system, the simulation effectively demonstrates how unsuspecting users can be manipulated into revealing sensitive credentials. This exercise underscores the critical role of continuous cybersecurity education and proactive vigilance in safeguarding personal and organizational data against social engineering threats.
