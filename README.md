@@ -101,5 +101,5 @@ This project is strictly for educational and awareness purposes. Do not use it t
 This project illustrates how phishing tactics can be ethically replicated within a controlled environment to enhance user awareness and resilience against online deception. By integrating a realistic login interface, a robust Flask backend, secure Ngrok tunneling, and an automated email dispatch system, the simulation effectively demonstrates how unsuspecting users can be manipulated into revealing sensitive credentials. This exercise underscores the critical role of continuous cybersecurity education and proactive vigilance in safeguarding personal and organizational data against social engineering threats.
 
 ## Author
-  Name: Satvik Bhagat
-  Contact: satvikbhagat2705@gmail.com
+- Name: Satvik Bhagat
+- Contact: satvikbhagat2705@gmail.com
