@@ -20,18 +20,17 @@ This Ethical Phishing Simulation Platform has been developed as an educational i
 - **Logging:** Plain text file
 
 ## Project Structure
-```
+```text
 phishing_simulatn/
-|---app.py
-|---send_email.py
-|---templates/
-|-|---outlook_modern.html
-|---static/
-|-|---css/
-|-|-|---modern.css
-|---logs.txt
-|---report_proj.pdf
-|---ngrok.exe
+├── app.py
+├── send_email.py
+├── static/
+│   └── css/
+│       └── modern.css
+├── templates/
+│   └── outlook_modern.html
+├── logs.txt
+├── ngrok.exe
 ```
 
 ## Pre-Requisite
